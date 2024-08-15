@@ -11,6 +11,13 @@ class LinkedList {
     this.size = 0;
   }
 
+  prepend(value) {
+    const newNode = new Node(value);
+    newNode.next = this.head;
+    this.head = newNode;
+    this.size++;
+  }
+
   pop() {
     if (!this.head) return null;
     if (this.size === 1) {
@@ -26,3 +33,5 @@ class LinkedList {
     this.size--;
   }
 }
+
+module.exports = LinkedList;
