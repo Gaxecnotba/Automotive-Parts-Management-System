@@ -25,12 +25,22 @@ class LinkedList {
       this.size--;
       return;
     }
+
     let current = this.head;
     while (current.next.next) {
       current = current.next;
     }
     current.next = null;
     this.size--;
+  }
+
+  removeAt(index) {
+    if (index < 0 || index >= this.size) return null;
+    if (index === 0) {
+      this.head = this.head.next;
+      this.size--;
+      return;
+    }
   }
 }
 
