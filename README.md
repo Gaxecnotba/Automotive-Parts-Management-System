@@ -26,6 +26,27 @@ The Linked List implementation in this system provides the following methods:
      inventory.pop();
      ```
 
+3. **removeAt(index)**
+
+   - **Description**: Removes the node at the specified index in the list.
+   - **Parameters**:
+     - `index`: The position of the node to be removed (0-based index).
+   - **Usage**:
+     ```javascript
+     inventory.removeAt(2);
+     ```
+
+4. **insertAt(index, value)**
+
+   - **Description**: Inserts a new node with the given value at the specified index in the list.
+   - **Parameters**:
+     - `index`: The position at which the new node should be inserted (0-based index).
+     - `value`: The value to be inserted.
+   - **Usage**:
+     ```javascript
+     inventory.insertAt(1, new Part("Shock Absorber", "Suspension", 45.0, 30));
+     ```
+
 # Installation
 
 1. Clone the repository:
